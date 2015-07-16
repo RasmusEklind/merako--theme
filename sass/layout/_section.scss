@@ -1,0 +1,10 @@
+$block: '.block';
+
+#{$block}__content {
+  @extend %container;
+  padding: rem(30) rem(15);
+}
+
+.block__title {
+  text-align: center;
+}

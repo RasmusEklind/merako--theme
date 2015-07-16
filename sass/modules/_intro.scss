@@ -1,0 +1,17 @@
+$block: '.intro';
+
+#{$block} {
+  @extend %clearfix;
+  @extend %container;
+  position: relative;
+}
+
+#{$block}__body {
+  display: block;
+}
+
+#{$block}__contaniner {
+  position: relative;
+  width: 100%;
+
+}

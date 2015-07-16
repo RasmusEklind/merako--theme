@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html {
+  font-size: $base-font-size;
+}
+
+body {
+  background-color: $base-background-color;
+  color: $base-text-color;
+  font-family: $base-font-family;
+  -webkit-font-smoothing: antialiased;
+  line-height: $base-line-height;
+}
+
+::selection {
+  color: $color-white;
+}
+
+video,
+embed,
+object,
+iframe,
+img {
+  max-width: 100%;
+}
+
+a {
+  border-bottom: 1px solid $base-link-color;
+  color: $base-link-color;
+  text-decoration: none;
+  transition: color .1s;
+
+  &:active,
+  &:hover {
+    border-bottom: 1px solid $base-link-color--hover;
+    color: $base-link-color--hover;
+  }
+
+  &.no-border {
+    border: 0;
+  }
+}
+
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $heading-color;
+  font-family: $heading-font-family;
+  font-weight: bold;
+  line-height: $heading-line-height;
+  margin: 0 0 $base-spacing;
+}
+
+
+ul {
+  list-style-type: square;
+  margin: 0 0 $base-spacing;
+  padding: 0 0 0 rem(18);
+}
+
+ol {
+  list-style-type: decimal;
+  margin: 0 0 $base-spacing;
+  padding: 0 0 0 rem(23);
+}
+
+label {
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  margin-bottom: rem(5);
+}
+
+input[type=email],
+input[type=text] {
+  border: 1px solid $color-grey--medium;
+  border-radius: rem(4);
+  font-size: $base-font-size;
+  padding: rem(8) rem(12);
+}
+
+address {
+  font-style: normal;
+}
+
+@media only screen and (min-width: $mq-medium) {
+  body {
+    font-size: $base-font-size;
+  }
+
+}

@@ -1,0 +1,21 @@
+%clearfix {
+  &:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+%container {
+  margin: 0 auto;
+  max-width: $max-width;
+}
+
+$rembase: 16;
+$line-height: 24;
+
+@mixin typography($font-size: 16, $line-height-multiplier: 1) {
+  font-size: ($font-size * 1rem) / $rembase;
+  line-height: ($line-height * $line-height-multiplier) / $font-size;
+}
+
