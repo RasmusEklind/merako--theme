@@ -2,6 +2,7 @@ $block: '.block';
 
 #{$block}__content {
   @extend %container;
+  background-color: $color-white;
   padding: rem(30) rem(15);
 }
 

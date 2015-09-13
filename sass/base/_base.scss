@@ -100,3 +100,19 @@ address {
   }
 
 }
+
+h1 {
+  font-size: rem($h1-font-size);
+}
+h2 {
+  font-size: rem($h2-font-size);
+}
+h3 {
+  font-size: rem($h3-font-size);
+}
+h4 {
+  font-size: rem($h4-font-size);
+}
+h5 {
+  font-size: rem($h5-font-size);
+}

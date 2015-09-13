@@ -1,6 +1,7 @@
 // Colors
 $color-white: #fff;
-$color-grey--light: #f0f0f0;
+$color-white--dark: #fafafa;
+$color-grey--light: #d1d2cd;
 $color-grey--medium: #959595;
 $color-grey--dark: #222;
 $color-orange: #ff8040;
@@ -10,7 +11,7 @@ $color-green: #38e05d;
 // Fonts
 $font-family-monospace: Menlo, Monaco, Consolas, 'Courier New', monospace;
 $font-family-sans-serif: 'Verdana', sans-serif;
-$font-family-serif: 'Georgia', 'Times New Roman', 'Times', serif;
+$font-family-serif: 'Old Standard TT', serif , 'Georgia', 'Times New Roman', 'Times', serif;
 
 // Base
 $base-background-color: $color-white;
@@ -18,17 +19,17 @@ $base-text-color: $color-grey--dark;
 $base-link-color: $color-purple;
 $base-link-color--hover: darken($color-purple, 20%);
 $base-spacing: 1.5rem;
-$base-font-family: $font-family-sans-serif;
+$base-font-family: $font-family-serif;
 $base-font-size: 16px;
 $base-line-height: 1.5;
 
 // Headings
-$heading-font-family: 'Myriad Pro', $font-family-sans-serif;
+$heading-font-family: $font-family-serif;
 $heading-line-height: 1.2;
 $heading-color: $color-grey--dark;
 
-$h1-font-size: 38;
-$h2-font-size: 30;
+$h1-font-size: 46;
+$h2-font-size: 38;
 $h3-font-size: 24;
 $h4-font-size: 20;
 $h5-font-size: 18;

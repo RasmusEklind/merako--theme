@@ -1,7 +1,7 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
      width="450px" height="450px" viewBox="40 162.9 521 519" style="enable-background:new 40 162.9 521 519;" xml:space="preserve" class="svg__icon">
-<g id="circle">
-    <circle fill="#FFFFFF" stroke="#fff" stroke-width="5" stroke-miterlimit="10" cx="297.64" cy="420.945" r="247.5"/>
+<g id="circle" class="svg__icon--circle">
+    <circle fill="#FFFFFF" stroke="#222" class="circle--path fadein" stroke-width="5" stroke-miterlimit="10" cx="297.64" cy="420.945" r="247.5"/>
 </g>
     <g id="Layer_1">
         <g>

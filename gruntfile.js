@@ -46,7 +46,8 @@ module.exports = function (grunt) {
             },
             js: {
                 files: [
-                    'js/theme.js'
+                    'js/scripts.js',
+                    'js/scroll-blur.js'
                 ],
                 tasks: ['concat', 'uglify']
             }

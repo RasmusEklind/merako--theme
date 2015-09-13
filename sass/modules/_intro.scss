@@ -1,17 +1,36 @@
 $block: '.intro';
 
 #{$block} {
+  margin: 0 auto;
+  max-width: rem(1800);
   @extend %clearfix;
-  @extend %container;
-  position: relative;
 }
 
 #{$block}__body {
   display: block;
 }
 
-#{$block}__contaniner {
+#{$block}__container {
   position: relative;
-  width: 100%;
 
+  &--image {
+
+  }
+  &--slogan {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+  }
 }
+#{$block}__overlay {
+  position: absolute;
+  top: 0; right: 0; left: 0; bottom: 0;
+  background: url(https://dl.dropboxusercontent.com/u/16657557/scripts/blur/bg-blurred.jpg) center no-repeat;
+  background-size: cover;
+  z-index: 0;
+  opacity: 0;
+}
+

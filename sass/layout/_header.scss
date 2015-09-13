@@ -1,32 +1,5 @@
 $header: '.header';
-// SVG
-.path1 {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  -webkit-animation: dash 500ms linear forwards;
-}
-.path2 {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  -webkit-animation: dash 500ms linear forwards;
-}
-.path3 {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  -webkit-animation: dash 500ms linear forwards;
-}
-@-webkit-keyframes dash {
 
-  from {
-    stroke-dashoffset: 1000;
-    fill-opacity: 0;
-  }
-
-  to {
-    fill-opacity: 1;
-    stroke-dashoffset: 0;
-  }
-}
 
 #{$header} {
 
@@ -35,7 +8,6 @@ $header: '.header';
   &__content {
     font-family: $heading-font-family;
     font-weight: 700;
-    @include typography($h1-font-size, 1.5);
     margin: 0 auto;
     padding: 4rem 1rem 1rem 1rem;
     max-width: $max-width;

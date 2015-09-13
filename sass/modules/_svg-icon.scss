@@ -1,11 +1,28 @@
 .svg__icon {
-height: rem(65);
-width: rem(60);
+height: rem(90);
+width: rem(90);
+
+  &--circle {
+    opacity: 0.8;
+  }
+
+}
+
+.circle--path {
+  stroke-dasharray: 1600;
+  stroke-dashoffset: 1600;
+  animation: dash 0.8s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 .svg__divider {
   margin: 0 auto;
-  height: rem(70);
-  width: rem(70);
+  height: rem(80);
+  width: rem(80);
   opacity: 0.6;
 }

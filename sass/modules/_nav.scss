@@ -5,8 +5,9 @@ $block: '.nav';
   max-height: 0;
   overflow: hidden;
   display: block;
-  transition: max-height 200ms;
-  -webkit-transition: max-height 200ms;
+  transition: max-height 100ms;
+  -webkit-transition: max-height 100ms;
+  margin-top: rem(71);
 }
 
 #{$block}__show {
@@ -26,14 +27,32 @@ $block: '.nav';
 #{$block}__link {
   color: $color-grey--dark;
   border: none;
-  font-size: rem(22);
+  font-size: $base-font-size;
+
+  &:hover {
+    border: none;
+  }
+
 }
+
 
 .header--wrapper {
   @extend %clearfix;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background-color: $color-white;
+  opacity: 0.9;
 
   &--icon {
     float: left;
+    margin-left: rem(8);
+
+    a {
+
+
+    border: none;
+    }
     }
 
   &--menu {
@@ -43,9 +62,14 @@ $block: '.nav';
     a {
       border: none;
       color: $color-grey--dark;
+
+      &:active {
+        transform: rotate(180deg);
+      }
     }
   }
   }
+
 
 
 

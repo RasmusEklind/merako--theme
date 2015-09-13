@@ -8,40 +8,39 @@
 }
 
 .instagram--feed {
-  -webkit-animation: fade-in-move-down .8s;
   margin: 0 auto;
   max-width: 1250px;
-  margin-bottom: 10rem;
-  padding: 1rem;
   width: 100%;
 }
 
 .instagram--post {
   float: left;
-  display: block;
-  width: 49%;
-  margin-right: 2%;
-
-
-  &:nth-child(2n+2) {
-    margin-right: 0;
-  }
+  width: 100%;
+  margin-bottom: rem(30);
+  background-color: $color-white--dark;
 }
 
 .instagram--link,
 .instagram--link:hover {
   border: 0;
+
+
 }
 
-.instagram__image {
-  width: 100%;
-  max-width: 100%;
+.instagram--image {
+  vertical-align: top;
+  width: 50%;
+  max-width: 50%;
+
 }
 
-.caption {
-  font-size: rem(14);
-  margin: 0;
+.instagram--caption {
+  float: right;
+  width: 50%;
+  max-width: 50%;
+  padding: rem(10);
 }
+
 .button--instagram {
   margin: 0 auto;
   display: table;
@@ -57,30 +56,30 @@
 
 
 // Instagram with four colums ** 450px+ **
-@media screen and (min-width: $mq-medium) {
-  .instagram--post {
-    width: 23.5%;
-    float: left;
-    margin-right: 2%;
+//@media screen and (min-width: $mq-medium) {
+  //.instagram--post {
+    //width: 23.5%;
+    //float: left;
+    //margin-right: 2%;
 
-    &:nth-child(2n+2) {
-      margin-right: 0;
-    }
-  }
-}
+    //&:nth-child(2n+2) {
+   //   margin-right: 0;
+   // }
+ // }
+// }
 
 // Instagram with six colums **901px+ **
-@media screen and (min-width: $mq-large) {
-  .instagram--post {
-    float: left;
-    width: 14.5%;
+// @media screen and (min-width: $mq-large) {
+ // .instagram--post {
+   // float: left;
+   // width: 14.5%;
 
-    &:nth-child(n) {
-      margin-right: 2%;
-    }
+//    &:nth-child(n) {
+     // margin-right: 2%;
+  //  }
 
-    &:nth-child(6n+6) {
-      margin-right: 0;
-    }
-  }
-}
+    //&:nth-child(6n+6) {
+      //margin-right: 0;
+    //}
+ // }
+// }

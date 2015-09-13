@@ -5,6 +5,7 @@
 	<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/app.css'; ?>">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/normalize.css'; ?>">
+	<link href='http://fonts.googleapis.com/css?family=Old+Standard+TT:400,700' rel='stylesheet' type='text/css'>
 
 	<link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
 	<link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
@@ -18,15 +19,11 @@
 
 		<div class="header--wrapper">
 
-			<div class="header--wrapper--icon">
-				<?php get_template_part('partials/svg-icon'); ?>
-			</div>
 
 			<div class="header--wrapper--menu">
-				<a href="#" class="menu__toggle button button--nav icon-menu"></a>
+				<a href="#" class="menu__toggle button button--nav icon-menu"><span></span></a>
 			</div>
-
+			<?php get_template_part('partials/nav'); ?>
 		</div>
 		</nav>
 	</header>
-<?php get_template_part('partials/nav'); ?>
