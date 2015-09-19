@@ -42,18 +42,33 @@ module.exports = function (grunt) {
                 files: [
                     'sass/**/*.scss'
                 ],
-                tasks: ['sass']
+                tasks: ['notify:start', 'sass', 'notify:finish']
             },
             js: {
                 files: [
                     'js/scripts.js',
                     'js/scroll-blur.js'
                 ],
-                tasks: ['concat', 'uglify']
+                tasks: ['notify:start', 'concat', 'uglify', 'notify:finish']
             }
-        }
+        },
+      notify: {
+          start: {
+            options: {
+              title: 'Grunt Watch',
+              message: 'Started...'
+            }
+          },
+          finish: {
+            options: {
+              title: 'Grunt Watch',
+              message: 'Finished!'
+            }
+          }
+    }
     });
-
+    
+    grunt.loadNpmTasks('grunt-notify');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
