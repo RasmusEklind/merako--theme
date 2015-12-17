@@ -1,1 +1,1 @@
-#Annika Eklind - Ceramic portfolio - Wordpress theme
+# - Ceramics portfolio - theme
