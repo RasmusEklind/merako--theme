@@ -1,5 +1,5 @@
+// Instagram feed
 jQuery(document).ready(function() {
-
     var feed = new Instafeed({
         get: 'user',
         // UserId and accessToken has to come from account that you want images from
@@ -14,7 +14,6 @@ jQuery(document).ready(function() {
     });
     feed.run();
 
-
 // Menu toggler
 $('.menu__toggle').on('click', function(e) {
     $('.nav').toggleClass("nav__show");
@@ -27,39 +26,25 @@ var url = window.location.href;
 jQuery('.nav__list a').filter(function() {
     return this.href == url;
 }).addClass('nav__active');
+$('a').click(function(){
 
-    $('a').click(function(){
-        $('html, body').animate({
-            scrollTop: $( $.attr(this, 'href') ).offset().top
-        }, 500);
-        return false;
+  $('html, body').animate({
+    scrollTop: $( $.attr(this, 'href') ).offset().top
+  }, 500);
+
+return false;
     });
 
 //fade in on scroll
-
     $(document).ready(function() {
-
         $(window).scroll( function(){
-
             $('.fadein').each( function(i){
-
                 var bottom_of_object = $(this).offset().top + $(this).outerHeight();
                 var bottom_of_window = $(window).scrollTop() + $(window).height();
-
                 if( bottom_of_window > bottom_of_object ){
-
                     $(this).animate({'opacity':'1'},800);
-
                 }
-
             });
-
         });
-
     });
-
-
-
-
 });
-

@@ -4,11 +4,11 @@
         $posts = get_posts(array('om' => 1, 'posts_per_page' => 5));
         foreach ($posts as $post) :
         setup_postdata($post); ?>
-            <article class="article-teaser article-teaser--collections">
+            <article class="article-teaser article-teaser--about">
                 <header class="article-teaser__header">
                     <a class="no-border" href="<?php echo the_permalink(); ?>">
                         <?php
-                        $image_classes = 'article-teaser__featured article-teaser__featured-collections';
+                        $image_classes = 'article-teaser__featured article-teaser__featured-about';
 
                         if (has_post_thumbnail()) {
                             the_post_thumbnail('medium', array('class' => $image_classes));
@@ -23,9 +23,7 @@
 
                 <section class="article-teaser__body">
                     <?php
-                    if (has_excerpt()) {
-                        echo truncated_excerpt(100);
-                    }
+                      get_the_excerpt
                     ?>
                 </section>
             </article>
